@@ -1,0 +1,104 @@
+Arvore binária em C
+
+Arvore lista um com remoçao de nó
+
+struct noArv {
+int valor;
+struct noArv* esq;
+struct noArv* dir;
+);
+Typedef struct noArv Arv;
+
+Void imprimeEmOrdem (Arq* a);
+Arv* insere (Arv* a, int valor);
+Arv* insere (Arv* r, int valor);
+
+
+Void main () }
+
+Arv* a = NULL;
+
+a = insere (a,45);
+a = insere (a,20);
+a = insere (a,30);
+a = insere (a,60);
+a = insere (a,81);
+a = insere (a,97);
+a = insere (a,100);
+a = insere (a,7);
+a = insere (a,8);
+a = insere (a,4);
+
+printf ("saida: \n");
+imprime em ordem (a);
+
+a = retira (a,1);
+
+printf (\n\nDepois de remover o 7 e 30:\n");
+imprime em ordem (a);
+
+Arv* retira (Arv* r, int valor)
+{
+
+	if (r == NULL){
+		return NULL;
+	}else if (r->valor > valor){
+		r->esq = retira(r->esq, valor);
+	}else if (r->valor < valor) {
+		r->dir = retira(r->dir, valor);
+	}else {
+		if (r->esq == NULL && r->dir ==NULL) {
+			free (r):
+			r = NULL;
+	}
+	else if (r->esq == NULL) {
+		Arv* aux = r;
+		printf('\nValor de R: %i",r->valor );
+		printf('\nValor de AUX: %i",aux->valor );
+		printf('\nValor de Filho Direita: %i",r->dir->valor );
+		r = r->dir;
+		printf('\nValor do novo R: %i",r->valor );
+		free (aux):
+	}
+	else if (r->dir == NULL) {
+		Arv* t = r;
+		r = r->esq;
+		free (t):
+	}
+		else {
+	}
+		retur r;
+______________________________________________________________________________________
+
+Arvore lista dois
+
+struct noArv {
+int valor;
+struct noArv* esq;
+struct noArv* dir;
+);
+Typedef struct noArv Arv;
+
+Void imprimeEmOrdem (Arq* a);
+Arv* insere (Arv* a, int valor);
+Arv* insere (Arv* r, int valor);
+
+
+Void main () }
+
+Arv* a = NULL;
+
+a = insere (a,13);
+a = insere (a,6);
+a = insere (a,18);
+a = insere (a,3);
+a = insere (a,7);
+a = insere (a,16);
+a = insere (a,20);
+a = insere (a,4);
+
+printf ("saida: \n");
+imprime em ordem (a);
+
+
+
